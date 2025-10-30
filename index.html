@@ -4,18 +4,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <title>Restaurant Finder</title>
+  <title>Restaurant Grade Finder</title>
 </head>
+
+<!-- Y: Changed the whole body -->
 <body>
+  <div class="nav">
+    <ul>
+      <li> <a href="index.html"> Home </a> </li> 
+      <li> <a href=""> About </a> </li> 
+      <li> <a href="faq.html"> FAQ </a> </li>
+      <li> <a href=""> Contact Us </a> </li>
+    </ul> 
+</div>
 
-  <div class="card">
-    <h2>Looking For A Restaurant?</h2>
-    <input type="text" id="searchBox" class="search-input" placeholder="Search Here">
-    <h2 style="color: darkblue;">Is Your Favorite Restaurant Up To Code?</h2>
-  </div>
+<div class="card">
+  <h2>Looking For A Restaurant?</h2>
 
-  <div id="results"></div> <!-- 👈 Add this to show results -->
+<p>Type the restaurant name (don't have to be full name) and optional borough.</p>
 
+<label>
+  Name:
+  <input id="name" placeholder="e.g. Joe's Pizza">
+</label>
+<label>
+  Borough:
+  <select id="boro">
+    <option value="">(Any)</option>
+    <option>Manhattan</option>
+    <option>Brooklyn</option>
+    <option>Bronx</option>
+    <option>Queens</option>
+    <option>Staten Island</option>
+  </select>
+</label>
+<button id="search">Search</button>
+
+<p id="status" class="muted"></p>
+<div id="results"></div> <!-- 👈 Add this to show results -->
+</div>
   <script src="script.js"></script>
 </body>
 </html>

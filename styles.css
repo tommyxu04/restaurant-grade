@@ -1,15 +1,23 @@
+
   body {
     margin: 0;
     height: 100vh;
+    /* Y: Commented this part out
     display: flex;
+    */
     justify-content: center;
     align-items: center;
     background: #eee;
     font-family: "Segoe UI", Arial, sans-serif;
   }
 
+
   .card {
-    width: 400px;
+    /* Y: Added this part*/
+    margin-top: 12%;
+    margin-left: 25%;
+    /* Change the width from 400px to */
+    width: 50%;
     background: linear-gradient(to right, white 50%, #c3b03b 50%);
     border-radius: 6px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
@@ -53,3 +61,33 @@
   .card a:hover {
     text-decoration: underline;
   }
+
+/* nav */
+.nav{
+  position:relative ;
+  background-color: #e3c565;
+}
+
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.nav ul li {
+  float: left;
+}
+
+.nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav ul li a:hover {
+  background-color: #D6B85A;
+}
+/* End of nav */
